@@ -1,0 +1,102 @@
+
+/** style sheet ( front ) **/
+
+/** events section style **/
+
+.wp_raffle_events-loop_wrap .wp_raffle_events-inner_wrap {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dedede;
+    padding-top: 5px;
+}
+.wp_raffle_events-loop_wrap .wp_raffle_events-inner_wrap.index_1 {
+    border-top: 1px solid #dedede;
+}
+.wp_raffle_events-loop_wrap .wp_raffle_events-inner_wrap .wp_raffle_events-name {
+    float: left;
+    margin-left: 0;
+    margin-right: 15px;
+    padding-right: 5px;
+}
+.wp_raffle_events-loop_wrap .wp_raffle_events-inner_wrap .wp_raffle_events-text {
+    float: left;    
+    margin-left: 0;
+    margin-right: 15px;
+    padding-right: 5px;
+}
+.wp_raffle_events-loop_wrap .wp_raffle_events-inner_wrap .wp_raffle_events-tickets {
+    float: left;    
+    margin-left: 0;
+    margin-right: 15px;
+    padding-right: 5px;
+}
+.wp_raffle_events-loop_wrap .wp_raffle_events-inner_wrap .wp_raffle_events-tickets span {
+    background: #dedede;
+    padding: 5px 10px 5px 10px;
+}
+
+/** events section style - END **/
+
+/** prizes section style **/
+
+.wp_raffle_prizes-loop_wrap .wp_raffle_prizes-inner_wrap {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dedede;
+    padding-top: 5px;
+}
+.wp_raffle_prizes-loop_wrap .wp_raffle_prizes-inner_wrap.index_1 {
+    border-top: 1px solid #dedede;
+}
+.wp_raffle_prizes-loop_wrap .wp_raffle_prizes-inner_wrap .wp_raffle_prizes-name {
+    margin-left: 0;
+    font-weight: bold;
+}
+.wp_raffle_prizes-loop_wrap .wp_raffle_prizes-inner_wrap .wp_raffle_prizes-text {
+    margin-left: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.wp_raffle_prizes-loop_wrap .wp_raffle_prizes-inner_wrap .wp_raffle_prizes-action { 
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.wp_raffle_prizes-loop_wrap .wp_raffle_prizes-inner_wrap .wp_raffle_prizes-action span {
+    background: #dedede;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+}
+
+/** prizes section style - END **/
+
+/** time schedule section style **/
+
+.wp_raffle_time-inner_wrap.index {
+    border-bottom: 0;    
+}
+.wp_raffle_time-inner_wrap {
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 0px;
+    padding: 10px 0px 10px 0px;
+}
+.wp_raffle_time-remaining {
+    margin-top: 5px;
+    margin-bottom: 5px;    
+}
+.wp_raffle_time-remaining span {
+    background: #dedede;
+    padding: 3px 10px 3px 10px;
+    margin-right: 5px;
+}
+.wp_raffle-randoms_selected span.randoms_seleced {
+    display: block;
+    text-align: center;
+    background: #dedede;
+    margin: 10px 0px 10px 0px;
+}
+
+/** time schedule section style - END **/
+
+.clear_both {
+    clear: both;
+}

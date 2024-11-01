@@ -1,0 +1,1008 @@
+
+/** style sheet ( admin ) **/
+
+/**
+    actions icon styles
+**/
+
+#wp-raffle__wrap > h2 {
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 15px;
+}
+.wp-raffle_edit-link {
+    background: url(../images/actions/Streamline-22-16.png);
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 10px;  
+}
+.wp-raffle_delete-link {
+    background: url(../images/actions/Streamline-70-16.png);
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 25px;   
+}
+
+#wp-raffle__wrap p.error-found 
+{
+    background: bisque;
+    padding: 5px 5px 5px 10px;
+    margin-top: 5px;
+}
+#wp-raffle__wrap p.no-error {
+    background: aquamarine;
+    padding: 5px 5px 5px 10px;
+}
+
+/**
+    actions icon styles - END
+**/
+
+#wp-raffle__wrap {
+    margin-top: 25px;
+}
+span.wp-raffle__counts {
+    background: gray;
+    color: #fff;
+    display: inline-block;
+    margin-left: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+}
+.wp-raffle__tickets--list-wrap span.wp-raffle__counts {
+    width: 40px;
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0;
+}
+a.setting-icon {
+    
+    background: url('../images/36-16.png');
+    display: inline-block;
+    width: 45px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-right: 1px solid #dedede;
+    float:left;
+}
+a.delete-icon {
+    background: url('../images/basics-22-16.png');
+    display: inline-block;
+    width: 45px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-right: 1px solid #dedede;
+    float:left;
+}
+a.add-icon {
+    background: url('../images/basics-15-16.png');
+    display: inline-block;
+    width: 45px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.wp-raffle__tickets--list-item .tickets--selected span.loader.ajaxs-true {
+    background: url('../images/ajaxs/4-1.gif');    
+    width: 16px;
+    height: 16px;
+}
+.wp-raffle_paypal.paypal-submit_validate a.loader.ajaxs-true {
+    background: url('../images/ajaxs/4-1.gif');    
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    padding-left: 30px;
+}
+#wp-raffle__wrap h2.wp-raffle_manager-title {
+    position: relative;
+    margin-bottom: 0;
+}
+#wp-raffle__wrap #wp-raffle_boxies-dropdown 
+{
+    background: url(../images/Menu1-16.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-left: 12px;
+    position: absolute;
+    top: 2px;
+    cursor: pointer;
+}
+#wp-raffle__wrap .wp-raffle_dropdown 
+{
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #dedede;
+    top: 1px;
+    left: 390px;
+    color: #000;
+    z-index: 99999;
+    display: none;
+}
+#wp-raffle__wrap .wp-raffle_dropdown .wp-raffle_dropdown-submenu {
+    background: url(../images/close-circle-red-16.png);
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 0px;
+    color: #000;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: right 12px;
+    padding-right: 25px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#wp-raffle__wrap .wp-raffle_dropdown .wp-raffle_dropdown-submenu:hover {
+    background-color: aliceblue;
+}
+#wp-raffle__wrap .wp-raffle_dropdown .wp-raffle_dropdown-submenu.tickets-ctrl {
+    border-top: 1px solid #dedede;
+}
+#wp-raffle__wrap .wp-raffle_dropdown .wp-raffle_dropdown-submenu.active {
+    background: url(../images/check-circle-green-16-1.png);
+    background-repeat: no-repeat;
+    background-position: right 12px;   
+}
+#wp-raffle__wrap #wp-raffle_action-settings 
+{
+    background: url(../images/Configuration-16.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-left: 42px;
+    position: absolute;
+    top: 2px;
+    cursor: pointer;
+}
+a.sortable-ui-handler-functions.sortable-icon {
+    background: url(../images/sort/sort2-16.png);
+    display: inline-block;
+    width: 45px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-right: 1px solid #dedede;
+    float: left;
+    cursor: all-scroll;
+}
+.ui-sortable.ui-sortable-helper {
+    border: 1px solid cornflowerblue;
+}
+/** TICKETS - style section **/
+
+.wp-raffle__tickets--wrap {
+    border: 1px solid #dedede;
+    width: 543px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: #fff;
+}
+.wp-raffle__tickets--inside {
+    overflow-y: scroll;
+    height: 250px;
+}
+.wp-raffle__tickets--title {
+    border-bottom: 1px solid #dedede;
+    height: 38px;
+}
+.wp-raffle__tickets--title h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px;
+    width: 338px;
+    border-right: 1px solid #dedede;
+    float: left;
+}
+.wp-raffle__tickets--title h2.not-admin {
+    width: 460px;
+}
+.wp-raffle__add--tickets-wraps {
+    background: #fff;
+    border: 1px solid #dedede;
+    padding: 20px 15px 20px 15px;
+    width: 50%;
+}
+.wp-raffle__add--tickets-wraps .tickets-input {
+    margin-bottom: 10px; 
+}
+.wp-raffle__add--tickets-wraps .tickets-input input[type='text'] {
+    width: 100%;
+    padding: 5px;
+}
+.wp-raffle__add--tickets-wraps .tickets-input.last-inputs {
+    margin-bottom: 0;
+}
+.wp-raffle__tickets--list-wrap {     
+    margin: 0;
+    width: 100%; 
+}
+.wp-raffle__tickets--list-item {
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 0;
+    height: 38px;
+}
+.wp-raffle__tickets--list-item .tickets--id {
+    border-right: 1px solid #dedede;
+    width: 20px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+}
+.wp-raffle__tickets--list-item .tickets--name {
+    border-right: 1px solid #dedede;
+    width: 15px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+}
+.wp-raffle__tickets--list-item .tickets--price {
+    border-right: 1px solid #dedede;
+    width: 25px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+}
+.wp-raffle__tickets--list-item .tickets--name span {
+    display: none;
+}
+.wp-raffle__tickets--list-item .tickets--action {
+    border-right: 1px solid #dedede;
+    width: 30px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+}
+.wp-raffle__tickets--list-item .tickets--counts {
+    border-right: 1px solid #dedede;
+    padding: 10px 10px 10px 5px;
+    cursor: pointer;
+    float: left;
+}
+.wp-raffle__tickets--list-item .tickets--selected {
+    width: 55px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-bottom: 0px;
+    border-right: 1px solid #dedede;
+    height: 28px;
+    position: relative;
+}
+.wp-raffle__tickets--list-item .tickets--functions {
+    width: 80px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-bottom: 0px;
+    border-right: 1px solid #dedede;
+    height: 28px;
+    position: relative;
+}
+.wp-raffle__tickets--list-item .tickets--selected span.wp-raffle__selected {
+    background: url('../images/More-16.png');
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position: center center;
+}
+.wp-raffle__tickets--list-item .tickets--selected span.wp-raffle__orders {
+    display: inline-block;
+    height: 20px;
+    float: right;
+    color: green;
+    position: absolute;
+    right: 15px;
+    text-decoration: underline;
+}
+.wp-raffle_label-div.label-div-tickets {
+    margin-bottom: 5px;
+    background: #dedede;
+    padding: 3px 0 5px 10px;
+}
+.wp-raffle_input-div.input-div-tickets {
+    margin-bottom: 5px;
+}
+.wp-raffle_input-div.input-div-tickets.submit-inputs {
+    border-top: 1px solid #dedede;
+    padding-top: 10px;    
+}
+
+/** TICKETS - style section : END **/
+
+/** USERS - style section **/
+
+.wp-raffle__users--wrap { 
+    border: 1px solid #dedede;
+    width: 543px;
+    float: left;
+    margin-top: 20px;
+    background: #fff;
+    margin-right: 20px;
+}
+.wp-raffle__users--title {
+    border-bottom: 1px solid #dedede;
+    height: 38px;
+}
+.wp-raffle__users--title h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px;
+    width: 338px;
+    border-right: 1px solid #dedede;
+    float: left;
+}
+.wp-raffle__users--title h2.not-admin {
+    width: 460px;
+}
+.wp-raffle__users--inside {
+    overflow-y: scroll;
+    height: 250px;
+}
+.wp-raffle__users--list-wrap {     
+    margin: 0;
+    width: 100%; 
+}
+.wp-raffle__users--list-item {
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 0;
+    height: 38px;
+}
+.wp-raffle__users--list-item .users--name {
+    border-right: 1px solid #dedede;
+    width: 60px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+}
+.wp-raffle__users--list-item .users--name span {
+    display: none;
+}
+.wp-raffle__users--list-item .users--id {
+    border-right: 1px solid #dedede;
+    width: 20px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}
+.wp-raffle__users--list-item .users--action {
+    border-right: 1px solid #dedede;
+    width: 90px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+}
+.users-events__links {
+    background: url('../images/calendar-16.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 20px;
+    color: #000;
+}
+.users-tickets__links {
+    background: url('../images/ticket-17.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    margin-right: 0px;
+    padding-left: 20px;
+    color: #000;
+}
+.wp-raffle_label-div.label-div-users {
+    margin-bottom: 5px;
+    background: #dedede;
+    padding: 3px 0 5px 10px;
+}
+.wp-raffle_input-div.input-div-users {
+    margin-bottom: 5px;
+}
+.wp-raffle_input-div.input-div-users.submit-inputs {
+    border-top: 1px solid #dedede;
+    padding-top: 10px;    
+}
+.wp-raffle__users--list-item .users--actions {
+    border-right: 1px solid #dedede;
+    width: 90px;
+    padding: 10px 10px 8px 12px;
+    cursor: pointer;
+    float: left;
+}
+.wp-raffle__users--list-item.user_is_active {
+    background: aliceblue;    
+}
+/** USERS - style section : END **/
+
+/**
+  * PRIZES  
+**/
+
+.wp-raffle__prizes--wrap {
+    border: 1px solid #dedede;
+    width: 543px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: #fff;
+}
+.wp-raffle__prizes--title {
+    border-bottom: 1px solid #dedede;
+    height: 38px;
+}
+.wp-raffle__prizes--title h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px;
+    width: 338px;
+    border-right: 1px solid #dedede;
+    float: left;
+}
+.wp-raffle__prizes--title h2.not-admin {
+    width: 460px;
+}
+.wp-raffle__add--prizes-wraps {
+    background: #fff;
+    border: 1px solid #dedede;
+    padding: 10px;
+    width: 50%;
+}
+.wp-raffle__add--prizes-wraps .prizes-input {
+    margin-bottom: 10px;
+}
+.wp-raffle__add--prizes-wraps .prizes-input input[type='text'] {
+    width: 100%;
+    padding: 5px;
+}
+.wp-raffle__add--prizes-wraps .prizes-input.last-inputs {
+    margin-bottom: 0;
+}
+.wp-raffle__add--prizes-wraps {
+    background: #fff;
+    border: 1px solid #dedede;
+    padding: 20px 15px 20px 15px;
+    width: 50%;
+}
+.wp-raffle__prizes--list-wrap .wp-raffle__prizes--list-item.item-even {
+    background: #f0f0f0;
+    padding: 10px;
+    position: relative;
+}
+.wp-raffle__prizes--list-wrap .wp-raffle__prizes--list-item.item-odd {
+    background: #f8f8f8;
+    padding: 10px;
+    position: relative;
+}
+.wp-raffle__prizes--list-wrap .wp-raffle__prizes--list-item .prizes--events__name {
+    position: absolute;
+    background: #d54e21;
+    padding: 5px 10px;
+    display: table;
+    top: 0px;
+    color: #fff;
+    right: 152px;
+}
+.wp-raffle__prizes--list-wrap .wp-raffle__prizes--list-item .prizes--tickets__orders {
+    position: absolute;
+    background: #00a0d2;
+    padding: 5px 10px;
+    display: table;
+    top: 0px;
+    color: #fff;
+    right: 75px;
+}
+.wp-raffle__prizes--list-wrap .wp-raffle__prizes--list-item .prizes--text {
+    margin-top: 5px;
+}
+.wp-raffle__prizes--list-wrap .wp-raffle__prizes--list-item .prizes--actions {
+    position: absolute;
+    background: darkgray;
+    padding: 5px 10px 3px 10px;
+    display: table;
+    top: 0px;
+    color: #fff;
+    right: 0;
+}
+.wp-raffle__prizes--list-wrap .wp-raffle__prizes--list-item .prizes--actions .wp-raffle_edit-link {
+    margin-left: 0;
+}
+.wp-raffle__prizes--list-wrap .wp-raffle__prizes--list-item .prizes--actions .wp-raffle_delete-link {
+    margin-left: 15px;
+}
+.wp-raffle__add--prizes-wraps .prizes-input {
+    margin-bottom: 10px;
+}
+.wp-raffle__add--prizes-wraps .prizes-input input[type='text'] {
+    width: 100%;
+    padding: 5px;
+}
+.wp-raffle__add--prizes-wraps .prizes-input input[type='text'].image-prizes_inputs {
+    width: 85%;    
+}
+.wp-raffle__add--prizes-wraps .prizes-input input[type='submit'].prize_browse_submit {
+    margin-left: 10px;
+}
+.wp-raffle_label-div.label-div-prizes {
+    margin-bottom: 5px;
+    background: #dedede;
+    padding: 3px 0 5px 10px;
+}
+.wp-raffle_input-div.input-div-prizes {
+    margin-bottom: 5px;
+}
+.wp-raffle_input-div.input-div-prizes.submit-inputs {
+    border-top: 1px solid #dedede;
+    padding-top: 10px;    
+}
+
+/** PRIZES - style section : END **/
+
+/** EVENTS - style section **/
+
+.wp-raffle__events--wrap {
+    border: 1px solid #dedede;
+    width: 543px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: #fff;
+}
+.wp-raffle__events--title {
+    border-bottom: 1px solid #dedede;
+    height: 38px;
+}
+.wp-raffle__events--title h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px;
+    width: 338px;
+    border-right: 1px solid #dedede;
+    float: left;
+}
+.wp-raffle__events--title h2.not-admin {
+    width: 460px;
+}
+.wp-raffle__add--events-wraps {
+    background: #fff;
+    border: 1px solid #dedede;
+    padding: 10px;
+    width: 50%;
+}
+.wp-raffle__add--events-wraps .events-input {
+    margin-bottom: 10px;
+}
+.wp-raffle__add--events-wraps .events-input input[type='text'] {
+    width: 100%;
+    padding: 5px;
+}
+.wp-raffle__add--events-wraps .events-input.last-inputs {
+    margin-bottom: 0;
+}
+.wp-raffle__add--events-wraps {
+    background: #fff;
+    border: 1px solid #dedede;
+    padding: 20px 15px 20px 15px;
+    width: 50%;
+}
+.wp-raffle__add--events-wraps .events-input {
+    margin-bottom: 10px;
+}
+.wp-raffle__add--events-wraps .events-input input[type='text'] {
+    width: 100%;
+    padding: 5px;
+}
+.wp-raffle__add--events-wraps .events-input.last-inputs {
+    margin-bottom: 0;
+}
+.wp-raffle__events--list-wrap {     
+    margin: 0;
+    width: 540px; 
+}
+.wp-raffle__events--list-item {
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 0;
+    height: 38px;
+}
+.wp-raffle__events--list-item .events--id {
+    border-right: 1px solid #dedede;
+    width: 40px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+}
+.wp-raffle__events--list-item .events--name {
+    border-right: 1px solid #dedede;
+    width: 45px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+}
+.wp-raffle__events--list-item .events--descr {
+    border-right: 1px solid #dedede;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+}
+.wp-raffle__events--list-item .events--name span {
+    display: none;
+}
+.wp-raffle__events--list-item .events--action {
+    border-right: 1px solid #dedede;
+    width: 30px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+}
+.wp-raffle__events--list-item .events--status {
+    border-right: 1px solid #dedede;
+    float: left;
+    width: 230px;
+    height: 33px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.wp-raffle__events--list-item .events--status span.events--status_data {
+    background-color: #cc99c2;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    padding: 5px;
+    margin-right: 5px;
+}
+.wp-raffle__events--list-item .events--actions {
+    width: 80px;
+    padding: 10px;
+    cursor: pointer;
+    float: left;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-bottom: 0px;
+    border-right: 1px solid #dedede;
+    height: 28px;
+    position: relative;
+}
+.wp-raffle_label-div.label-div-events {
+    margin-bottom: 5px;
+    background: #dedede;
+    padding: 3px 0 5px 10px;
+}
+.wp-raffle_input-div.input-div-events {
+    margin-bottom: 5px;
+}
+.wp-raffle_input-div.input-div-events.submit-inputs {
+    border-top: 1px solid #dedede;
+    padding-top: 10px;    
+}
+
+/** EVENTS - style section : END **/
+
+/** ACCOUNTS - style section **/
+
+.wp-raffle__accounts--wrap {
+    border: 1px solid #dedede;
+    width: 543px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: #fff;
+}
+.wp-raffle__accounts--title {
+    border-bottom: 1px solid #dedede;
+    height: 38px;
+    position: relative;
+}
+.wp-raffle__accounts--title h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px;
+    width: 105px;
+    border-right: 1px solid #dedede;
+    float: left;
+}
+.wp-raffle__accounts--data {
+    padding: 5px;
+    border-bottom: 1px solid #dedede;
+}
+span.wp-raffle__accounts--data-label {
+    display: inline-block;
+    border-right: 1px solid #dedede;
+    margin-right: 5px;
+    width: 45px;
+}
+span.wp-raffle__accounts--data-label.events--label {
+    width: auto;
+    padding: 5px 10px 5px 5px;
+}
+a.delete-icon.accounts-title__delete {
+    background-image: url('../images/698983-icon-136-document-edit-16.png');
+}
+a.add-icon.accounts-title__add {
+    background-image: url('../images/point_green-16.png');
+}
+.accounts-events, .accounts-tickets, 
+.accounts-prizes, .accounts-accounts {
+    display: inline-block;
+    width: 45px;
+    height: 29px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-right: 1px solid #dedede;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.accounts-accounts.tab1 {
+    width: 60px;
+}
+.accounts-tabs.active {
+    background: antiquewhite;     
+}
+
+/** ACCOUNTS - style section : END **/
+
+/** TIMES - style section **/
+
+.wp-raffle__time_schedule {
+    margin-top: 30px;
+}
+.time-schedule__label div.data {
+    float: left;
+    border: 1px solid #dedede;
+    background: #fff;
+}
+.time-schedule__label div.data.time-schedule__label-name {
+    padding: 10px 25px 10px 25px;
+    border-right: 0;
+    width: 100px;
+}
+.time-schedule__label div.data.time-schedule__label-description {
+    padding: 10px 25px 10px 25px;
+    border-right: 0;
+    width: 120px;
+}
+.time-schedule__label div.data.time-schedule__label-time {
+    padding: 10px 25px 10px 25px;
+    border-right: 0;
+    width: 160px;
+}
+.time-schedule__label div.data.time-schedule__label-action {
+    padding: 10px 25px 6px 25px;
+    width: 160px;
+}
+.time-schedule__result div.data {
+    float: left;
+    border: 1px solid #dedede;
+    background: #fff;
+}
+.time-schedule__result div.data.time-schedule__result-name {
+    padding: 10px 25px 10px 25px;
+    border-right: 0;
+    width: 100px;
+    border-top: 0;
+}
+.time-schedule__result div.data.time-schedule__result-description {
+    padding: 10px 25px 10px 25px;
+    border-right: 0;
+    width: 120px;
+    border-top: 0;
+}
+.time-schedule__result div.data.time-schedule__result-time {
+    padding: 10px 25px 10px 25px;
+    border-right: 0;
+    width: 160px;
+    border-top: 0;
+}
+.time-schedule__result div.data.time-schedule__result-action {
+    padding: 5px 25px 7px 25px;
+    width: 160px;
+    border-top: 0;
+    position: relative;
+}
+.time_schedule_set-timer {
+    color: #fff;
+    display: inline-block;
+    padding: 4px 10px 6px 10px;
+    cursor: pointer;
+}
+.time_schedule_set-timer.active {
+    background: green;
+}
+.time_schedule_set-timer.not-active {
+    background: red;
+}
+.wp-raffle__set-timer_form {
+    position: absolute;
+    top: 5px;
+    left: 65px;
+    height: 26px;
+    width: 210px;
+    background: #fff;
+    border: 1px solid #dedede;
+    display: none;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+.wp-raffle__set-timer_form input {
+    height: 20px;
+}
+span.time-set_schedule_submit {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    cursor: pointer;
+}
+span.time-set_schedule_submit.active {
+    background: green;
+}
+span.time-set_schedule_submit.not-active {
+    background: red;
+}
+span.time-set_schedule_submit.loader.ajaxs-true {
+    background: url(../images/ajaxs/4-1.gif);
+    width: 16px;
+    height: 16px;
+}
+.data.time-schedule__label-action span.randoms-button-start {
+    background: url(../images/v-33-16.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-top: 2px;
+    border: 1px solid #dedede;
+    cursor: pointer;
+    padding: 0px 5px 0px 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.time-schedule__result-wrap .ticket_data__result {
+    background: #fff;
+    width: 718px;
+    border-bottom: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    padding: 10px 0 10px 25px;
+}
+.time-schedule__result-wrap code.randoms_seleced {
+    background: #d54e21;    
+}
+.time-schedule__result-wrap code {
+    background: #00a0d2;    
+}
+#wp-raffle__wrap .ajaxs-results p {
+    width: 725px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+#wp-raffle__wrap .ajaxs-results p.defaulted {
+    background: darkgrey;
+}
+#wp-raffle__wrap .ajaxs-results p.selecting {
+    background: pink;
+}
+#wp-raffle__wrap .ajaxs-results p.selected {
+    background: bisque;
+}
+#wp-raffle__wrap .ajaxs-results p.selected span {
+    background: coral;
+    display: inline-block;
+    padding: 0 5px 0 5px;
+    margin-left: 5px;
+}
+.time-schedule_manager .ajaxs-results .defaulted .generated-key {
+    background: antiquewhite;
+    display: inline-block;
+    padding: 0px 5px;
+    margin-left: 5px;
+}
+
+/** TIMES - style section : END **/
+
+/** SETTINGS - style section  **/
+
+.setting-input-wrap.setting-input-settings {
+    margin-bottom: 10px;
+}
+.wp-raffle_label-div.label-div-settings {
+    margin-bottom: 5px;
+    background: #dedede;
+    padding: 3px 0 5px 10px;
+}
+.setting-input-wrap.setting-input-settings input[type='text'] {
+    width: 100%;
+}
+.setting-input-wrap.setting-input-settings.submit-settings {
+    border-top: 1px solid #dedede;
+    padding-top: 10px;
+}
+.setting-input-wrap.setting-input-settings a.button {
+    background: url(../images/36-16.png);
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    padding-left: 30px;
+}
+.wp-raffle__accounts--data a.settings_links.button {
+    background: url(../images/paypal/paypal-16.png);
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    padding-left: 30px;
+}
+.setting-input-wrap.setting-input-settings.name_inputs-paypal-validate,
+.setting-input-wrap.setting-input-settings.name_inputs-paypal,
+.setting-input-wrap.setting-input-settings.name_inputs- {
+    border-top: 3px solid salmon;
+    padding-top: 5px;    
+}
+.setting-input-wrap.setting-input-settings.pid_inputs-paypal-validate,
+.setting-input-wrap.setting-input-settings.pid_inputs-paypal,
+.setting-input-wrap.setting-input-settings.pid_inputs- {
+    border-bottom: 3px solid salmon;
+    padding-bottom: 5px;    
+}
+.wp-raffle_paypal.paypal-submit_validate {
+    margin-bottom: 10px;
+}
+.wp-raffle_paypal.paypal-submit_validate a.paypal_submit {
+    background: url(../images/paypal/Paypal-2-16.png);
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    padding-left: 30px;
+}
+/** SETTINGS - style section : END **/
+
+/** HELPS - style section **/
+
+.wp-raffle__help_wrap .wp-raffle__help_wrap_inner {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #dedede;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.wp-raffle__help_wrap .wp-raffle__help_wrap_inner.first-class {
+    padding-top: 10px;
+}
+#wp-raffle__wrap .wp-raffle__help_wrap .wp-raffle__help_wrap_inner p {
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+/** HELPS - style section : END **/
